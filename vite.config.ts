@@ -14,8 +14,10 @@ export default defineConfig({
   build: {
     target: 'esnext',
     minify: false,
+    outDir:"lib",
     lib: {
-      entry: resolve(__dirname, join('lib', 'index.ts')),
+      entry: resolve(__dirname, join('packages', 'index.ts')),
+      
       fileName: 'index',
       formats: ['es', 'cjs'],
     },
@@ -26,7 +28,7 @@ export default defineConfig({
   },
   test: {
     environment: 'jsdom',
-    setupFiles: './lib/test/setup.ts',
+    setupFiles: './packages/test/setup.ts',
     coverage: {
       all: false,
       enabled: true,

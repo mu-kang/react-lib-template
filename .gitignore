@@ -1,5 +1,6 @@
 node_modules
 dist
+lib
 storybook-static
 coverage
 pnpm-lock.yaml 
