@@ -3,11 +3,7 @@ import { withoutVitePlugins } from '@storybook/builder-vite';
 
 const config: StorybookConfig = {
   stories: ['../packages/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
-  addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-actions',
-    '@chromatic-com/storybook'
-  ],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-actions', '@chromatic-com/storybook'],
 
   framework: {
     name: '@storybook/react-vite',
@@ -22,7 +18,7 @@ const config: StorybookConfig = {
   }),
 
   typescript: {
-    reactDocgen: 'react-docgen-typescript'
-  }
+    reactDocgen: 'react-docgen-typescript',
+  },
 };
 export default config;
