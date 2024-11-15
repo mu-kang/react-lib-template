@@ -14,10 +14,10 @@ export default defineConfig({
   build: {
     target: 'esnext',
     minify: false,
-    outDir:"lib",
+    outDir: 'lib',
     lib: {
       entry: resolve(__dirname, join('packages', 'index.ts')),
-      
+
       fileName: 'index',
       formats: ['es', 'cjs'],
     },
