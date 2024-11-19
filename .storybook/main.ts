@@ -3,7 +3,12 @@ import { withoutVitePlugins } from '@storybook/builder-vite';
 
 const config: StorybookConfig = {
   stories: ['../packages/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-actions', '@chromatic-com/storybook'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-actions',
+    '@chromatic-com/storybook',
+    '@storybook/addon-themes',
+  ],
 
   framework: {
     name: '@storybook/react-vite',
