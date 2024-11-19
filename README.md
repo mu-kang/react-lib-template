@@ -1,4 +1,4 @@
-# Vite React Component Library Starter
+# Vite React Component Library template
 
 This is a starter template for creating React component libraries using Vite. It includes a robust set of features to help you develop, test, and build your library efficiently.
 
